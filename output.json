@@ -3,5 +3,10 @@
         "Task": "mining",
         "Days Completed": 5,
         "Current Streak": 2
+    },
+    {
+        "Task": "hunting",
+        "Days Completed": 5,
+        "Current Streak": 2
     }
 ]

@@ -64,7 +64,11 @@ def removeTask():
     with open('output.json', 'r') as f:
         printData = json.load(f)
     #print(printData[1])
-    printData.pop(1)
+    for hoddy in printData:
+        print({hoddy['Task']})
+    remove = input("What task do you want to remove: ")
+    printData = list(filter(lambda t: t.get("Task") != remove, printData))
+    #printData.pop(1)
     with open('output.json', 'w') as f:
         json.dump(printData, f, indent=4)
 
